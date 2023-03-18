@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>생일 축하합니다!</title>
+  </head>
+  <body>
+    <script>
+      function checkPassword() {
+        var now = new Date();
+        var birthday = new Date("March 18, 2023 00:00:00");
+        var beforeBirthday = new Date("March 17, 2023 23:00:00");
+
+        if (now >= beforeBirthday && now < birthday) {
+          alert("생일 축하 메시지는 생일날 보여집니다!");
+        } else {
+          var password = prompt("비밀번호를 입력하시오:");
+
+          if (password === "1234") {
+            alert("생일 축하합니다!");
+          } else {
+            alert("잘못된 비밀번호입니다!");
+          }
+        }
+      }
+
+      checkPassword();
+    </script>
+  </body>
+</html>
